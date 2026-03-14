@@ -1,11 +1,13 @@
 const wrapper = document.getElementById("wrapper");
-const question = document.getElementById("question");
+const question1 = document.getElementById("question1");
+const question2 = document.getElementById("question2");
 const gif = document.getElementById("gif");
 const yesBtn = document.getElementById("yes-btn");
 const noBtn = document.getElementById("no-btn");
 
 yesBtn.addEventListener("click", () => {
-  question.innerHTML = "Yay, see you on the 14th of Feb!";
+  question1.innerHTML = "Yeiii :DDD";
+  question2.innerHTML = "¿De verdad? :33";
   gif.src = "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
 });
 
