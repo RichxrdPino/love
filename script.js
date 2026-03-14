@@ -4,11 +4,19 @@ const question2 = document.getElementById("question2");
 const gif = document.getElementById("gif");
 const yesBtn = document.getElementById("yes-btn");
 const noBtn = document.getElementById("no-btn");
+var cont = 0;
 
 yesBtn.addEventListener("click", () => {
-  question1.innerHTML = "Yeiii :DDD";
-  question2.innerHTML = "¿De verdad? :33";
-  gif.src = "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
+  if (cont == 0){
+    question1.innerHTML = "Yeiii :DDD";
+    question2.innerHTML = "¿De verdad? :33";
+    gif.src = "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif"; 
+    cont++;
+  }else{
+    question1.innerHTML = "yupiii";
+    question2.innerHTML = "te amo :3";
+  }
+  
 });
 
 noBtn.addEventListener("mouseover", () => {
